@@ -1,4 +1,4 @@
-# Development for a 12-DOF 4-Legged Robot
+# Developing a 12-DOF 4-Legged Robot
 
 Derivation of the <a href="https://github.com/SphericalCowww/ROS_leggedRobot_testBed">GitHub Repository</a>:
 
