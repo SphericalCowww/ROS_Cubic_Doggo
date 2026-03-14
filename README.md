@@ -56,24 +56,24 @@ To install Isaac Sim, follow <a href="https://docs.isaacsim.omniverse.nvidia.com
 
 To load the assets locally, follow <a href="https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_faq.html">"Assets" guide</a> and get zip file from <a href="https://docs.isaacsim.omniverse.nvidia.com/6.0.0/installation/download.html">download links (3 parts)</a>:
 
-    mkdir .../Kit/assets
-    cd .../Kit/assets
+    mkdir /home/cubicdoggo/Documents/Kit/assets
+    cd /home/cubicdoggo/Documents/Kit/assets
     7z x isaac-sim-assets-complete-5.1.0.zip.001
-    vim .../isaacsim/apps/isaacsim.exp.base.kit
+    vim /home/cubicdoggo/Documents/isaacsim/apps/isaacsim.exp.base.kit
     # following: https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_faq.html
     # find: 
     ## [settings]
     # add below:
     ## persistent.isaac.asset_root.default = ".../Kit/assets/Isaac/5.1"
     ## exts."isaacsim.gui.content_browser".folders = [
-    ##     ".../Kit/assets/Isaac/5.1/Isaac/Robots",
-    ##     ".../Kit/assets/Isaac/5.1/Isaac/People",
-    ##     ".../Kit/assets/Isaac/5.1/Isaac/IsaacLab",
-    ##     ".../Kit/assets/Isaac/5.1/Isaac/Props",
-    ##     ".../Kit/assets/Isaac/5.1/Isaac/Environments",
-    ##     ".../Kit/assets/Isaac/5.1/Isaac/Materials",
-    ##     ".../Kit/assets/Isaac/5.1/Isaac/Samples",
-    ##     ".../Kit/assets/Isaac/5.1/Isaac/Sensors",
+    ##     "/home/cubicdoggo/Documents/Kit/assets/Isaac/5.1/Isaac/Robots",
+    ##     "/home/cubicdoggo/Documents/Kit/assets/Isaac/5.1/Isaac/People",
+    ##     "/home/cubicdoggo/Documents/Kit/assets/Isaac/5.1/Isaac/IsaacLab",
+    ##     "/home/cubicdoggo/Documents/Kit/assets/Isaac/5.1/Isaac/Props",
+    ##     "/home/cubicdoggo/Documents/Kit/assets/Isaac/5.1/Isaac/Environments",
+    ##     "/home/cubicdoggo/Documents/Kit/assets/Isaac/5.1/Isaac/Materials",
+    ##     "/home/cubicdoggo/Documents/Kit/assets/Isaac/5.1/Isaac/Samples",
+    ##     "/home/cubicdoggo/Documents/Kit/assets/Isaac/5.1/Isaac/Sensors",
     ## ]
     # open Issac Sim
     # load the assets directly from "Content" on the bottom left
@@ -123,7 +123,8 @@ And to check for the installation (may need to wait a bit):
     ## <origin xyz="0 0 0" rpy="0 0 0"/>
 
     # rm ~/.cache/ # if needed
-    # File => Import => ../ROS_leggedRobot_testBed/src/my_robot_description/urdf/cubic_doggo.urdf
+    isaacsim
+    # File => Import => /home/cubicdoggo/Documents/CubicDoggo/src/my_robot_description/urdf/cubic_doggo.urdf
     # Model => Create in Stage
     # Links => Movable Base 
     # Joints & Drives => Joint Configuration => Stiffness
@@ -137,5 +138,16 @@ And to check for the installation (may need to wait a bit):
     # Tools => Physics => Physics Inspector => cubic_doggo (defaultPrim) => Refresh
     ## Move joints to the correct positions (although inaccurate) => click green tick to confirm
     # Run (left panel)
+    # save as: /home/cubicdoggo/Documents/CubicDoggo/cubicdoggo_isaaclab/usd/cubic_doggo.usd
+
+### Creating Isaac Lab Workflow
+
+    isaaclab.sh --new
+    # Task type: External
+    # ...
+    # Isaac Lab workflow: Manager-based | single-agent
+    # RL library: rsl_rl
+
+    # reference to /home/cubicdoggo/Documents/isaaclab/source/isaaclab_assets/isaaclab_assets/robots/cubic_doggo.py
 
 <img src="https://github.com/SphericalCowww/ROS_leggedRobot_testBed/blob/main/IsaacSimImport.png" width="600">
