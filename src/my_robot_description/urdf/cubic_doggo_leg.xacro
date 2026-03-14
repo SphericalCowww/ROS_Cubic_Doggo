@@ -31,7 +31,7 @@
     <link name="servo1_holder_${prefix}">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/mesh/CADv0.1/XL430holderBasic.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/mesh/CADv1/XL430holderBasic.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="white"/>
             <origin xyz="0 0 0" rpy="0 0 ${urdf_pi/2}"/>
@@ -101,7 +101,7 @@
     <link name="servo2_holder_${prefix}">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/mesh/CADv0.1/XL430holderBasic.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/mesh/CADv1/XL430holderBasic.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="white"/>
             <origin xyz="0 0 0" rpy="${urdf_pi/2} 0 0"/>
@@ -172,7 +172,7 @@
     <link name="inner_thigh_${prefix}">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/mesh/CADv0.1/thighInner.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/mesh/CADv1/thighInner.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="blue"/>
             <origin xyz="0 0 0" rpy="${-rflc*urdf_pi/2} 0 ${-urdf_pi/2}"/>
@@ -195,7 +195,7 @@
     <link name="outer_thigh_${prefix}">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/mesh/CADv0.1/thighOuter.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/mesh/CADv1/thighOuter.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="blue"/>
             <origin xyz="0 0 0" rpy="${-urdf_pi/2} ${urdf_pi/2-rflc*urdf_pi/2} ${-rflc*urdf_pi/2}"/>
@@ -241,7 +241,7 @@
     <link name="calfFeet_${prefix}">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/mesh/CADv0.1/calfFeet.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/mesh/CADv1/calfFeet.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="purple"/>
             <origin xyz="${-0.004} -0.008 0.038" rpy="0 ${urdf_pi/2} 0"/>
@@ -267,7 +267,7 @@
     <link name="calfJoint_${prefix}">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/mesh/CADv0.1/calfJoint.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/mesh/CADv1/calfJoint.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <origin xyz="0 0 0" rpy="${urdf_pi/2} 0 ${-rflc*urdf_pi/2}"/>
             <material name="white"/>

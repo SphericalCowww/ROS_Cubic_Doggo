@@ -31,7 +31,7 @@
     <link name="base_plate_F">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/mesh/CADv0.1/basePlate.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/mesh/CADv1/basePlate.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="grey"/>
@@ -53,7 +53,7 @@
     <link name="base_plate_B">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/mesh/CADv0.1/basePlate.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/mesh/CADv1/basePlate.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="grey"/>
